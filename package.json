@@ -1,0 +1,16 @@
+{
+  "name": "iframe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-plugin-clean-dist": "0.0.6",
+    "sass": "^1.26.9"
+  }
+}

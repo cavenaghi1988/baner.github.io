@@ -1,0 +1,118 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 130px;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.bg {
+  background-image: url(../assets/bg-left-s.png);
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+
+
+}
+
+.cloud {
+  width: 100%;
+  height: 250px;
+  background-image: url(../assets/clouds.png);
+  background-repeat: repeat;
+  background-position: 50% 0%;
+  animation-name: clouds;
+  animation-duration: 40s !important;
+  animation-timing-function: linear !important;
+  animation-iteration-count: infinite;
+  top: 180px;
+  left: 0;
+  position: absolute;
+  opacity: 0.15;
+}
+
+.container {
+
+  width: 100%;
+  min-width: 130px;
+  height: 100%;
+
+  top: 0px;
+  right: 0px;
+
+  overflow: hidden;
+
+  .video {
+    width: 91.67%;
+    bottom: 22%;
+    left: -200px;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.7s;
+    position: absolute;
+
+    video {
+      width: 100%;
+
+      border: 1px solid #c71212;
+      box-shadow: 0px 0px 8px 0px #c71212;
+      box-sizing: border-box;
+    }
+  }
+
+  .video.active {
+    left: 0;
+    opacity: 1;
+    transition: 0.7s;
+    visibility: visible;
+  }
+
+  .btn {
+    background: url(../assets/2-layers.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 70.42%;
+    height: 14.23%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    transition: 0.7s;
+    position: absolute;
+  }
+
+  .btn.active {
+    bottom: 5%;
+    opacity: 1;
+    transition: 0.7s;
+  }
+
+}
+
+
+
+
+
+@keyframes clouds {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}
