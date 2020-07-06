@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-width: 130px;
+  // min-width: 130px;
   height: 100%;
   overflow: hidden;
   cursor: pointer;
@@ -42,12 +42,14 @@ body {
 }
 
 .light {
-  background: url(../assets/fx1_Lichtanimation.png) 50% 50% no-repeat;
-  background-size: contain;
+  background: url(../assets/fx1_Lichtanimation.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
   width: 140px;
   height: 140px;
   top: 160px;
-  left: 11%;
+  left: 18px;
   animation-name: light;
   animation-duration: 2s !important;
   animation-timing-function: ease-in-out !important;
@@ -57,7 +59,7 @@ body {
 
 .container {
   width: 100%;
-  min-width: 130px;
+  // min-width: 130px;
   height: 100%;
 
   top: 0px;
@@ -67,7 +69,7 @@ body {
 
   .name {
     width: 91.67%;
-    height: 50px;
+    height: 30%;
     background-image: url(../assets/4-layers.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -124,9 +126,11 @@ body {
   0% {
     opacity: 0;
   }
+
   30% {
     opacity: 1;
   }
+
   60%,
   100% {
     opacity: 0;

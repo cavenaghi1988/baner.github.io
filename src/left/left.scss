@@ -13,10 +13,8 @@ body {
   background-image: url(../assets/bg-left-s.png);
   background-position: 100% 0%;
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-size: auto;
-  background-origin: padding-box;
-  background-clip: border-box;
+  background-attachment: scroll;
   position: absolute;
   overflow: hidden;
   width: 100vw;
@@ -114,5 +112,25 @@ body {
 
   100% {
     background-position: -100% 0;
+  }
+}
+
+
+@media screen and (max-width: 1224px) {
+  .bg {
+    background-image: url(../assets/bg-left-xs.png);
+  }
+}
+
+
+@media screen and (max-width: 1450px) {
+  .bg {
+    background-image: url(../assets/bg-left-m.png);
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .bg {
+    background-image: url(../assets/bg-left-l_.png);
   }
 }
