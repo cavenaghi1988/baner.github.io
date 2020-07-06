@@ -34,6 +34,11 @@ window.onload = function () {
     } else if (event.data == "1121px") {
       video.style.display = "inline-block";
       video.style.height = "203px";
+    } else if (event.data == "hd") {
+      video.style.display = "inline-block";
+      bg.classList.remove("active")
+      text.style.left = "-241px";
+
     }
 
   })

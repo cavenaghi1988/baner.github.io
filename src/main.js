@@ -16,6 +16,8 @@ window.onload = function () {
       tiframe.contentWindow.postMessage(`920px`, "*");
     } else if (window.matchMedia("(max-width: 1121px)").matches) {
       tiframe.contentWindow.postMessage(`1121px`, "*");
+    } else {
+      tiframe.contentWindow.postMessage(`hd`, "*");
     }
   }, 500);
 };
